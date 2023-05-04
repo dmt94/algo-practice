@@ -1,3 +1,6 @@
+//we compare each value in the outer loop with the lowest number encountered
+//in the inner loop. We then swap the lowest number into its correct position
+
 function selectionSort(arr) {
   for (let i = 0; i < arr.length; i++) {
     let lowestNumIdx = i;
@@ -10,7 +13,7 @@ function selectionSort(arr) {
       }
     }
     if (lowestNumIdx !== i) {
-      //after finding the lowesNumIdx from looping through all the vals in the array, comparing it with the first value of the array
+      //after finding the lowestNumIdx from the looping through all the vals in the array, comparing it with the first value of the array
 
       let temp = arr[i];
       //set a temporary variable to the first value in the array,
